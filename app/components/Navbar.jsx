@@ -50,10 +50,16 @@ const Navbar = () => {
             <ul className="flex items-center gap-[1.7rem] text-[1.2rem] text-[#f7f7f7]">
               {pages.map((page, idx) => (
                 <li key={idx}>
-                  <Link href={page.url}>{page.title}</Link>
+                  <Link
+                    className="group  transition duration-300"
+                    href={page.url}
+                  >
+                    {page.title}
+                    <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#f7f7f7]"></span>
+                  </Link>
                 </li>
               ))}
-              <li className="bg-[#f7f7f7] rounded-md text-[#505ca4] px-4 py-2 hover:bg-[#c5c5c5] transition-all duration-100">
+              <li className="bg-[#f7f7f7] rounded-md text-[#505ca4] px-4 py-2 hover:bg-[#ffffff] transition-all duration-100">
                 <Link href="/about">Get Involved</Link>
               </li>
             </ul>

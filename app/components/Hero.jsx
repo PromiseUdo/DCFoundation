@@ -67,7 +67,7 @@ const Carousel = () => {
           </p>
 
           <div className="flex flex-col md:flex-row mt-6 w-full justify-center  items-center gap-4">
-            <button className="bg-[#f7f7f7] px-4 py-2 text-[#505ca4] rounded-md text-base md:text-lg hover:bg-[#c5c5c5] transition-all duration-100 ">
+            <button className="bg-[#f7f7f7] px-4 py-2 text-[#505ca4] rounded-md text-base md:text-lg hover:bg-[#fff] transition-all duration-100 ">
               Our Causes
             </button>
             <button className="bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100">
@@ -76,11 +76,11 @@ const Carousel = () => {
           </div>
         </div>
         {/* left arrow */}
-        <div className="absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl shadow-sm rounded-full p-2 bg-white/20 text-white cursor-pointer">
+        <div className="absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl shadow-sm rounded-full p-2 bg-white/20 hover:bg-[#c5c5c520] transition-all duration-100 text-white cursor-pointer">
           <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
         {/* right arrow */}
-        <div className="absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl shadow-sm rounded-full p-2 bg-white/20 text-white cursor-pointer">
+        <div className="absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl shadow-sm rounded-full p-2 bg-white/20 hover:bg-[#c5c5c520] transition-all duration-100 text-white cursor-pointer">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
       </div>
