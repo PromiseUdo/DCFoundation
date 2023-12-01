@@ -54,7 +54,7 @@ const Carousel = () => {
         }}
         className="w-full h-full bg-center bg-cover duration-500"
       >
-        <div className="flex flex-col items-center justify-center w-[50%] absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center gap-3">
+        <div className="flex flex-col items-center justify-center w-[100%] md:w-[50%] absolute top-[40%] left-1/2 transform -translate-x-1/2 -translate-y-1/2  text-center gap-3">
           <p className="tracking-wider text-[#f7f7f7]">
             Empower. Transform. Thrive
           </p>
