@@ -53,7 +53,7 @@ const Navbar = () => {
                   <Link href={page.url}>{page.title}</Link>
                 </li>
               ))}
-              <li className="bg-[#f7f7f7] rounded-md text-[#505ca4] px-4 py-2">
+              <li className="bg-[#f7f7f7] rounded-md text-[#505ca4] px-4 py-2 hover:bg-[#c5c5c5] transition-all duration-100">
                 <Link href="/about">Get Involved</Link>
               </li>
             </ul>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 </Link>
               </li>
             ))}
-            <li className="bg-[#f7f7f7] mt-[0.4rem] rounded-md text-[#505ca4] px-4 py-2">
+            <li className="bg-[#f7f7f7] mt-[0.4rem] rounded-md text-[#505ca4] hover:bg-[#c5c5c5] transition-all duration-100 px-4 py-2">
               <Link href="/about">Get Involved</Link>
             </li>
           </ul>
