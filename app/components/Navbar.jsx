@@ -59,7 +59,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="text-[1.8rem] flex items-center md:hidden">
+          <div className="text-[1.7rem] flex items-center md:hidden">
             <button>
               <FaBars onClick={() => setIsActive(true)} color="#f7f7f7" />
             </button>
