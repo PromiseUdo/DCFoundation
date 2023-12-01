@@ -32,7 +32,7 @@ const Navbar = () => {
 
   useOnClickOutside(mobileNav, () => setIsActive(false));
   return (
-    <div className="sticky top-0 w-full bg-[#505ca4]">
+    <div className="shadow-md z-[999] sticky top-0 w-full bg-[#505ca4]">
       <Container>
         <nav className="w-full h-[65px] flex items-center justify-between">
           <Link className="h-[inherit] w-[80px]" href="/">

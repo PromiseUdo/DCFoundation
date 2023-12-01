@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { createClient } from "contentful";
 import Dummy from "./components/Dummy";
+import HeroSection from "./components/Hero";
 
 // async function getData() {
 //   const client = createClient({
@@ -17,7 +18,13 @@ export default async function Home() {
   // const data = await getData();
 
   // console.log(data.items, "dd");
-  return <h1>Homepage</h1>;
+  return (
+    <>
+      <HeroSection />
+
+      <Dummy />
+    </>
+  );
 }
 
 // export async function getStaticProps() {
