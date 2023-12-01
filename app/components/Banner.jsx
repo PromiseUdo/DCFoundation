@@ -23,11 +23,11 @@ const Banner = () => {
         <div className="flex items-center justify-center gap-[0.8rem]">
           <div className="flex items-center gap-[0.5rem] text-[1.1rem] py-0 px-[0.7rem]  border-r-[1.5px] border-[#f7f7f7]">
             <IoLocationOutline />
-            <span>Pune, India</span>
+            <span className="text-xs md:text-sm">Pune, India</span>
           </div>
           <div className="flex items-center gap-[0.5rem] text-[1.1rem] py-0 px-[0.7rem]  border-r-[1.5px] border-[#f7f7f7]">
             <BsTelephone />
-            <span>+91 7899 365494</span>
+            <span className="text-xs md:text-sm">+91 7899 365494</span>
           </div>
           <div className="flex items-center gap-[0.7rem] ">
             <Link href="#">
