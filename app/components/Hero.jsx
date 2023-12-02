@@ -67,10 +67,10 @@ const Carousel = () => {
           </p>
 
           <div className="flex flex-col md:flex-row mt-6 w-full justify-center  items-center gap-4">
-            <button className="bg-[#f7f7f7] px-4 py-2 text-[#505ca4] rounded-md text-base md:text-lg hover:bg-[#fff] transition-all duration-100 ">
+            <button className="shadow-md bg-[#f7f7f7] px-4 py-2 text-[#505ca4] rounded-md text-base md:text-lg hover:bg-[#fff] transition-all duration-100 ">
               Our Causes
             </button>
-            <button className="bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100">
+            <button className="shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100">
               Get Involved
             </button>
           </div>

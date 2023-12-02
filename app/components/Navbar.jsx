@@ -103,10 +103,11 @@ const Navbar = () => {
             {pages.map((page, idx) => (
               <li className="my-[0.4rem]  " key={idx}>
                 <Link
-                  className="w-full pb-[0.5rem] text-[#f7f7f7]  "
+                  className="w-full pb-[0.5rem] text-[#f7f7f7] group  transition duration-300 "
                   href={page.url}
                 >
                   {page.title}
+                  <span class="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-[#f7f7f7]"></span>
                 </Link>
               </li>
             ))}

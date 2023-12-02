@@ -6,7 +6,7 @@ import Banner from "./components/Banner";
 const poppins = Fira_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata = {
-  title: "DC Foundation",
+  title: "DS Foundation",
   description: "Empower. Transform. Thrive",
 };
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { createClient } from "contentful";
 import Dummy from "./components/Dummy";
 import HeroSection from "./components/Hero";
+import FocusAreas from "./components/FocusAreas";
 
 // async function getData() {
 //   const client = createClient({
@@ -21,8 +22,7 @@ export default async function Home() {
   return (
     <>
       <HeroSection />
-
-      <Dummy />
+      <FocusAreas />
     </>
   );
 }
