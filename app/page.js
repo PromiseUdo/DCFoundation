@@ -3,6 +3,7 @@ import { createClient } from "contentful";
 import Dummy from "./components/Dummy";
 import HeroSection from "./components/Hero";
 import FocusAreas from "./components/FocusAreas";
+import MissionAndVision from "./components/MissionAndVision";
 
 // async function getData() {
 //   const client = createClient({
@@ -23,6 +24,7 @@ export default async function Home() {
     <>
       <HeroSection />
       <FocusAreas />
+      <MissionAndVision />
     </>
   );
 }

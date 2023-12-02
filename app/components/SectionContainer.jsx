@@ -5,11 +5,11 @@ const SectionContainer = ({ title, subtitle, description, children }) => {
   return (
     <section
       id=""
-      className="w-full relative pb-[6rem] pt-[5rem] after:absolute after:content-[''] after:bottom-0 after:left-0 after:w-[100%] after:h-[1px] after:bg-[#f7f7f7]"
+      className="w-full relative pb-[6rem] pt-[5rem] after:absolute after:content-[''] after:bottom-0  after:h-[1px] after:bg-[#eaeaef] after:w-[80%] after:left-[50%] after:translate-x-[-50%]"
     >
       <Container>
         <div className="flex flex-col items-center justify-center ">
-          <h3 className="py-[0.3rem] px-[0.5rem] rounded-md bg-black/10 w-[max-content] mb-[0.6rem] text-2xl font-medium">
+          <h3 className="py-[0.3rem] px-0.1rem md:px-[0.5rem] rounded-md bg-black/10 w-[max-content] mb-[0.6rem] text-2xl font-medium">
             <span
               className="captitalize bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  bg-clip-text"
               style={{

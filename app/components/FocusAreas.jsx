@@ -1,5 +1,4 @@
 import React from "react";
-import Container from "./Container";
 import SectionContainer from "./SectionContainer";
 import FocusAreaCard from "./FocusAreaCard";
 const focusAreas = [
