@@ -27,8 +27,9 @@ const FocusAreas = () => {
       title="Focus Areas"
       subtitle="What drives our passion everyday"
       description="We believe we can contribute a lot to the development of women lives by focusing on these areas"
+      hasBg={false}
     >
-      <div className="mt-12 w-full flex flex-wrap flex-col md:flex-row justify-center gap-20 items-center">
+      <div className=" w-full flex flex-wrap flex-col md:flex-row justify-center gap-20 items-center">
         {focusAreas.map((focusArea, idx) => (
           <FocusAreaCard
             key={idx}

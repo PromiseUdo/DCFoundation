@@ -4,6 +4,7 @@ import Dummy from "./components/Dummy";
 import HeroSection from "./components/Hero";
 import FocusAreas from "./components/FocusAreas";
 import MissionAndVision from "./components/MissionAndVision";
+import Testimonials from "./components/Testimonials";
 
 // async function getData() {
 //   const client = createClient({
@@ -25,6 +26,7 @@ export default async function Home() {
       <HeroSection />
       <FocusAreas />
       <MissionAndVision />
+      <Testimonials />
     </>
   );
 }

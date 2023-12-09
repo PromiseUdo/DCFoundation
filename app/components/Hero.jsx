@@ -59,7 +59,7 @@ const Carousel = () => {
             Empower. Transform. Thrive
           </p>
           <h1 className="text-[#f7f7f7] text-shadow-md text-6xl font-bold mb-4 ">
-            DC Foundation
+            DS Foundation
           </h1>
           <p className="text-[#f7f7f7] text-lg tracking-wide max-w-[100%] md:max-w-[60%] ">
             We believe that when a woman is successful her community is

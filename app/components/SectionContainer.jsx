@@ -1,12 +1,26 @@
 import React from "react";
 import Container from "./Container";
+import { clsx } from "clsx";
 
-const SectionContainer = ({ title, subtitle, description, children }) => {
+const SectionContainer = ({
+  hasBg,
+  title,
+  subtitle,
+  description,
+  children,
+  color = "#fff",
+}) => {
   return (
     <section
+      style={{
+        background: color,
+      }}
       id=""
-      className="w-full relative pb-[6rem] pt-[5rem] after:absolute after:content-[''] after:bottom-0  after:h-[1px] after:bg-[#eaeaef] after:w-[80%] after:left-[50%] after:translate-x-[-50%]"
+      className={clsx(
+        " w-full relative pb-[6rem] pt-[5rem] after:absolute after:content-[''] after:bottom-0  after:h-[1px] after:bg-[#eaeaef] after:w-[100%] "
+      )}
     >
+      {/* after:left-[50%] after:translate-x-[-50%] */}
       <Container>
         <div className="flex flex-col items-center justify-center ">
           <h3 className="py-[0.3rem] px-0.1rem md:px-[0.5rem] rounded-md bg-black/10 w-[max-content] mb-[0.6rem] text-2xl font-medium">
@@ -28,7 +42,7 @@ const SectionContainer = ({ title, subtitle, description, children }) => {
             {description}
           </p>
         </div>
-        <div>{children}</div>
+        <div className="mt-12">{children}</div>
       </Container>
     </section>
   );
