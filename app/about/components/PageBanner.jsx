@@ -6,10 +6,11 @@ const PageBanner = () => {
     <section className="w-full bg-[#202441] py-20 mb-12 h-52">
       <Container>
         <div
-          className="w-full
+          className="w-full flex flex-col gap-2
         "
         >
           <h1 className="text-[#f7f7f7] text-4xl">About Us</h1>
+          <p className="text-[#f7f7f7] ">Get to know about Us</p>
         </div>
       </Container>
     </section>

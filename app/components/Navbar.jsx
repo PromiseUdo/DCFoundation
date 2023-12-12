@@ -59,7 +59,7 @@ const Navbar = () => {
                   </Link>
                 </li>
               ))}
-              <li className="bg-[#f7f7f7] rounded-md text-[#505ca4] px-4 py-2 hover:bg-[#ffffff] transition-all duration-100">
+              <li className="bg-[#f7f7f7] rounded-lg text-[#505ca4] px-4 py-2 hover:bg-[#ffffff] transition-all duration-100">
                 <Link href="/about">Get Involved</Link>
               </li>
             </ul>

@@ -14,11 +14,11 @@ const Footer = () => {
   return (
     <section className="w-full text-[#f7f7f7] bg-[#202441] py-20">
       <Container>
-        <div className="w-full flex">
-          <div className="pr-8 grow flex flex-col gap-4">
+        <div className="w-full flex flex-col-reverse lg:flex-row">
+          <div className="mt-4 lg:mt-0 pr-8 items-center lg:items-start grow flex flex-col gap-4">
             <Image src={"/logo.jpeg"} height={115} width={115} alt="logo" />
-            <div className="flex flex-col gap-2 ">
-              <h3 className="tracking-wider uppercase text-3xl font-semibold">
+            <div className="items-center lg:items-start flex flex-col gap-2 ">
+              <h3 className="tracking-wider uppercase text-lg lg:text-3xl font-semibold text-center lg:text-start">
                 We&apos;re here to Help.
               </h3>
               <div className="flex items-center gap-1">
