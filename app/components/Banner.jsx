@@ -21,15 +21,15 @@ const Banner = () => {
           </Link>
         </div> */}
         <div className="flex items-center justify-center gap-[0.5rem] lg:gap-[1rem]">
-          <div className="flex items-center gap-[0.5rem] text-[1.1rem] py-0 px-[0.5rem]  border-r-[1.5px] border-[#f7f7f7]">
+          <div className="flex items-center gap-[0.5rem] text-[1.1rem] py-0 px-[0.4rem]  border-r-[1.5px] border-[#f7f7f7]">
             <IoLocationOutline />
             <span className="text-xs md:text-sm">Dadri, Uttar Pradesh</span>
           </div>
-          <div className="flex items-center gap-[0.5rem] text-[1.1rem] py-0 px-[0.5rem]  border-r-[1.5px] border-[#f7f7f7]">
+          <div className="flex items-center gap-[0.5rem] text-[1.1rem] py-0 px-[0.4rem]  border-r-[1.5px] border-[#f7f7f7]">
             <BsTelephone />
             <span className="text-xs md:text-sm">94722 24524</span>
           </div>
-          <div className="flex items-center gap-[0.5rem] lg:gap-[0.7rem] ">
+          <div className="flex items-center gap-[0.4rem] lg:gap-[0.7rem] ">
             <Link href="#">
               <TbBrandFacebook />
             </Link>
