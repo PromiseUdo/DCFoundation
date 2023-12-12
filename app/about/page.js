@@ -1,5 +1,6 @@
 import AboutSection from "./components/AboutSection";
 import BreadCrumb from "./components/BreadCrumb";
+import OurImpact from "./components/OurImpact";
 import PageBanner from "./components/PageBanner";
 
 export default function About() {
@@ -8,6 +9,7 @@ export default function About() {
       <BreadCrumb />
       <PageBanner />
       <AboutSection />
+      <OurImpact />
     </>
   );
 }
