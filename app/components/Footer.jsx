@@ -66,8 +66,8 @@ const Footer = () => {
             <div className="w-20  h-[2px] bg-[#FFB600]"></div>
 
             <div className="flex flex-col gap-1">
-              <h3 className="font-medium text-lg">Pune, India</h3>
-              <p className="">#23 Masharatta Road</p>
+              <h3 className="font-medium text-lg">Dadri, Uttar Pradesh</h3>
+              {/* <p className="">#23 Masharatta Road</p> */}
             </div>
             <div className="flex flex-col gap-1">
               <h3 className="font-medium text-lg">Opening Hours</h3>

@@ -17,11 +17,11 @@ const pages = [
   },
   {
     title: "Blog",
-    url: "/about",
+    url: "/blog",
   },
   {
     title: "Resources",
-    url: "/about",
+    url: "/resources",
   },
 ];
 
