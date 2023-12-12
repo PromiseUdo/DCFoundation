@@ -23,16 +23,21 @@ const Footer = () => {
               </h3>
               <div className="flex items-center gap-1">
                 <FaPhone />
-                <span className="">+91 (0) 816 476 3362</span>
+                <span className="">94722 24524</span>
               </div>
               <div className="flex items-center gap-1">
                 <MdEmail />
-                <span className="">dsfoundation@gmail.com</span>
+                <span className="">dsfoundationw@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 mt-4">
                 <FaInstagramSquare className="cursor-pointer" size={30} />
                 <FaFacebookSquare className="cursor-pointer" size={30} />
-                <FaLinkedin className="cursor-pointer" size={30} />
+                <a
+                  href="https://www.linkedin.com/company/ds-foundations/"
+                  target="_blank"
+                >
+                  <FaLinkedin className="cursor-pointer" size={30} />
+                </a>
               </div>
             </div>
           </div>
