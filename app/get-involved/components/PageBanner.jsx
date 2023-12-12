@@ -10,8 +10,9 @@ const PageBanner = () => {
         "
         >
           <h1 className="text-[#f7f7f7] text-4xl">Get Involved</h1>
-          <p className="text-[#f7f7f7] ">
-            Become a partner, volunteer or work with us
+          <p className="text-[#f7f7f7] max-w-lg">
+            Become a partner, volunteer or work with us. Together we can make a
+            difference
           </p>
         </div>
       </Container>
