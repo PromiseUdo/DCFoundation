@@ -2,6 +2,7 @@ import { Poppins, Merriweather, Fira_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 
 const poppins = Fira_Sans({ subsets: ["latin"], weight: ["400", "700"] });
 
@@ -17,6 +18,7 @@ export default function RootLayout({ children }) {
         <Banner />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

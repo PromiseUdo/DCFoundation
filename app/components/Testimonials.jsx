@@ -33,7 +33,7 @@ const testimonialData = [
 const TestimonialCard = ({ imgSource, country, comment, name, profession }) => {
   return (
     <div className="flex flex-col-reverse items-center md:items-start md:flex-row justify-center py-0 px-[3rem] gap-[2rem] mb-[4rem] pt-[2rem]">
-      <div className="w-full h-auto md:h-[400px] select-none ">
+      <div className="  w-full h-auto md:h-[200px] select-none ">
         {/* country */}
         <div className="relative text-start mb-[1rem]">
           <div className="text-[#1e1e1e50] absolute top-[-4.3rem] left-[-1.5rem] text-[8rem]">
@@ -52,7 +52,7 @@ const TestimonialCard = ({ imgSource, country, comment, name, profession }) => {
         </div>
       </div>
       <div className="flex items-center justify-center w-auto md:w-[70%]">
-        <div className="w-[250px] h-[250px] md:w-[350px] md:h-[340px] rounded-full overflow-hidden relative ">
+        <div className="w-[200px] h-[200px] md:w-[200px] md:h-[200px] rounded-full overflow-hidden relative ">
           <Image
             src={imgSource}
             alt="testifier_image"
@@ -94,6 +94,7 @@ const Testimonials = () => {
             imgSource={testimonial.imgSource}
             country={testimonial.country}
             profession={testimonial.profession}
+            comment={testimonial.comment}
             name={testimonial.name}
           />
         ))}

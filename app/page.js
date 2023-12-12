@@ -5,7 +5,9 @@ import HeroSection from "./components/Hero";
 import FocusAreas from "./components/FocusAreas";
 import MissionAndVision from "./components/MissionAndVision";
 import Testimonials from "./components/Testimonials";
-
+import Navbar from "./components/Navbar";
+import Banner from "./components/Banner";
+import Footer from "./components/Footer";
 // async function getData() {
 //   const client = createClient({
 //     space: process.env.CONTENTFUL_SPACE_ID,
@@ -27,6 +29,7 @@ export default async function Home() {
       <FocusAreas />
       <MissionAndVision />
       <Testimonials />
+      {/* <Footer /> */}
     </>
   );
 }
