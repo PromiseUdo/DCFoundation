@@ -8,13 +8,13 @@ const OurImpact = () => {
       <Container>
         <div className="w-full flex items-center justify-center">
           <div className="h-[fit-content] w-full 2xl:w-[70%] px-12 py-12 rounded-xl bg-[#202441]">
-            <div className="w-full flex flex-col lg:flex-row items-center justify-between h-full">
+            <div className="w-full flex flex-col md:flex-row items-center justify-between h-full">
               <div className="py-4">
                 <h2 className="max-w-lg text-2xl lg:text-4xl text-[#f7f7f7]">
                   Our Impact
                 </h2>
               </div>
-              <div className="text-[#f7f7f7] flex flex-col lg:flex-row items-center gap-8">
+              <div className="text-[#f7f7f7] flex flex-col md:flex-row items-center gap-8">
                 <div className="w-full flex flex-col gap-3">
                   <p className="text-3xl lg:text-5xl font-semibold">50K+</p>
                   <p className="font-light">Active Members</p>

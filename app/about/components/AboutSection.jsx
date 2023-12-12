@@ -8,7 +8,7 @@ const AboutSection = () => {
   return (
     <section className="w-full py-12 ">
       <Container>
-        <div className="w-full flex flex-col lg:flex-row items-center justify-between h-full">
+        <div className="w-full flex flex-col md:gap-12 md:flex-row items-center justify-between h-full">
           <div className="flex flex-col gap-8">
             <div>
               <span className="text-4xl font-semibold  leading-relaxed text-[#505ca4]">
@@ -59,7 +59,7 @@ const AboutSection = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#f2f2f2] h-[16rem] w-[fit-content] selection:self-start flex items-center justify-center mt-8 lg:mt-0">
+          <div className="bg-[#f2f2f2] h-[16rem] w-[fit-content] md:w-[24rem]  selection:self-start flex items-center justify-center mt-8 lg:mt-0">
             <div className=" gap-12 flex flex-col justify-center px-16">
               <h2 className=" text-2xl lg:text-4xl font-semibold text-[#505ca4]">
                 Find the best counsel and support
