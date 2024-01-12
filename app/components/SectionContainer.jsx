@@ -22,8 +22,8 @@ const SectionContainer = ({
     >
       {/* after:left-[50%] after:translate-x-[-50%] */}
       <Container>
-        <div className="flex flex-col items-center justify-center ">
-          <h3 className="py-[0.3rem] px-0.1rem md:px-[0.5rem] rounded-md bg-black/10 w-[max-content] mb-[0.6rem] text-2xl font-medium">
+        <div className="w-full  flex flex-col items-center justify-center ">
+          <h3 className="py-[0.3rem] px-[1rem] md:px-[0.5rem] rounded-md bg-black/10 w-[max-content] mb-[0.6rem] text-lg md:text-2xl font-medium">
             <span
               className="captitalize bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500  bg-clip-text"
               style={{
@@ -35,14 +35,14 @@ const SectionContainer = ({
             </span>
           </h3>
           {/* #212427 */}
-          <h2 className="text-[#333366] text-[2.5rem] py-0 px-[2rem] mb-[0.8rem] text-center ">
+          <h2 className="text-[#333366]  text-[1.5rem] md:text-[2.5rem] py-0  mb-[0.8rem] text-center ">
             {subtitle}
           </h2>
-          <p className="text-[1rem] text-[#333366] text-center max-w-[50rem] px-[2rem]">
+          <p className="text-[1rem] text-[#333366] text-center w-full md:max-w-[50rem] ">
             {description}
           </p>
         </div>
-        <div className="mt-12">{children}</div>
+        <div className="mt-8 md:mt-12">{children}</div>
       </Container>
     </section>
   );
