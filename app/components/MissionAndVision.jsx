@@ -32,10 +32,13 @@ const MissionAndVision = () => {
             <h3 className="text-2xl font-medium text-[#f7f7f7] ">
               Our Mission
             </h3>
-            <p className="leading-loose mt-2 max-w-sm text-[#f7f7f7]">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-              ratione. Maxime nemo necessitatibus eligendi. Natus optio dolores
-              alias dicta magnam in iusto harum animi ullam.
+            <p className="text-sm md:text-base leading-loose mt-2 max-w-2xl text-[#f7f7f7]">
+              At DS Foundation, our mission is to empower women, break the cycle
+              of domestic violence, and provide holistic support for those
+              seeking to rebuild their lives. We are dedicated to fostering
+              resilience, promoting emotional well-being, and creating a
+              community where every woman can thrive with dignity, strength, and
+              independence
             </p>
           </div>
         </div>
@@ -45,10 +48,13 @@ const MissionAndVision = () => {
           </div>
           <div className="w-full">
             <h3 className="text-2xl font-medium ">Our Vision</h3>
-            <p className="leading-loose mt-2 max-w-sm">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel,
-              ratione. Maxime nemo necessitatibus eligendi. Natus optio dolores
-              alias dicta magnam in iusto harum animi ullam.
+            <p className="text-sm md:text-base leading-loose mt-2 max-w-2xl">
+              Our vision at DS Foundation is a world where every woman lives
+              free from the shadows of domestic violence, equipped with the
+              tools to overcome challenges and pursue her dreams. We aspire to
+              be a beacon of hope, leading transformative change, and fostering
+              a society that champions equality, safety, and empowerment for all
+              women.
             </p>
           </div>
         </div>

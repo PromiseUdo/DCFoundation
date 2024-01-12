@@ -17,7 +17,9 @@ const Footer = () => {
       <Container>
         <div className="w-full flex flex-col-reverse md:flex-row">
           <div className=" mt-4 md:mt-0 pr-8 items-center md:items-start grow flex flex-col gap-4">
-            <Image src={"/logo.jpeg"} height={115} width={115} alt="logo" />
+            <Link href="/">
+              <Image src={"/logo.jpeg"} height={115} width={115} alt="logo" />
+            </Link>
             <div className="w-full items-center md:items-start flex flex-col gap-2 ">
               <h3 className="tracking-wider uppercase text-lg lg:text-3xl font-semibold text-center lg:text-start">
                 We&apos;re here to Help.
@@ -50,15 +52,25 @@ const Footer = () => {
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-1">
                 <MdChevronRight />{" "}
-                <span className=" cursor-pointer">About</span>
+                <Link href="/about" className=" cursor-pointer">
+                  About
+                </Link>
+              </div>
+              <div className="flex items-center gap-1">
+                <MdChevronRight />{" "}
+                <Link href="/services" className="cursor-pointer ">
+                  Services
+                </Link>
+              </div>
+              <div className="flex items-center gap-1">
+                <MdChevronRight />{" "}
+                <Link href="/get-involved" className="cursor-pointer ">
+                  Get Involved
+                </Link>
               </div>
               <div className="flex items-center gap-1">
                 <MdChevronRight />{" "}
                 <span className=" cursor-pointer ">Community</span>
-              </div>
-              <div className="flex items-center gap-1">
-                <MdChevronRight />{" "}
-                <span className="cursor-pointer ">Careers</span>
               </div>
             </div>
           </div>
@@ -86,7 +98,10 @@ const Footer = () => {
 
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-1">
-                <MdChevronRight /> <span className=" cursor-pointer">Blog</span>
+                <MdChevronRight />
+                <Link href="/blog" className=" cursor-pointer">
+                  Blog
+                </Link>
               </div>
               <div className="flex items-center gap-1">
                 <MdChevronRight />{" "}

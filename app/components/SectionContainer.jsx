@@ -38,7 +38,7 @@ const SectionContainer = ({
           <h2 className="text-[#333366]  text-[1.5rem] md:text-[2.5rem] py-0  mb-[0.8rem] text-center ">
             {subtitle}
           </h2>
-          <p className="text-[1rem] text-[#333366] text-center w-full md:max-w-[50rem] ">
+          <p className="md:first-letter:text-[1rem] text-sm text-[#333366] text-center w-full md:max-w-[50rem] ">
             {description}
           </p>
         </div>

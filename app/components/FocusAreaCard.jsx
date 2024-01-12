@@ -11,7 +11,9 @@ const FocusAreaCard = ({ icon, title, alt, description }) => {
             <h3 className="text-[#333366] tracking-wide text-center font-semibold">
               {title}
             </h3>
-            <p className=" text-[#333366] text-center text-sm">{description}</p>
+            <p className=" text-[#333366] text-center text-sm md:text-base">
+              {description}
+            </p>
           </div>
         </div>
       </div>

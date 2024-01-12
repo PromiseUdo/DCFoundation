@@ -38,15 +38,7 @@ const LatestPosts = () => {
       hasBg={true}
       color="#fafafa"
     >
-      {/* <Container> */}
       <div className="w-full">
-        {/* <div className="w-full">
-            <h2 className="text-[#505ca4]  font-semibold text-4xl leading-relaxed">
-              Latest from our Blog
-            </h2>
-            <div className="w-20 mt-1 h-[2px] bg-[#FFB600]"></div>
-          </div> */}
-
         <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">
           {posts.map((post, idx) => (
             <PostCard
@@ -70,7 +62,6 @@ const LatestPosts = () => {
           </Link>
         </div>
       </div>
-      {/* </Container> */}
     </SectionContainer>
   );
 };
