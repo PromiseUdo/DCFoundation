@@ -9,6 +9,7 @@ import { MdChevronRight } from "react-icons/md";
 import { FaCalendarDay } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
 import Container from "./Container";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -89,7 +90,9 @@ const Footer = () => {
               </div>
               <div className="flex items-center gap-1">
                 <MdChevronRight />{" "}
-                <span className=" cursor-pointer ">Knowledge Center</span>
+                <Link href="/faq" className=" cursor-pointer ">
+                  FAQs
+                </Link>
               </div>
               <div className="flex items-center gap-1">
                 <MdChevronRight />{" "}
