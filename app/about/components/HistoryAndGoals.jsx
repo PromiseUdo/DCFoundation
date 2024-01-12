@@ -10,7 +10,7 @@ const requirements = [
   "Become a part of the DS Foundation community.",
 ];
 
-const otherLoanOptions = [
+const goals = [
   {
     title: "Empower Survivors of Domestic Violence",
     description:
@@ -80,7 +80,7 @@ const HistoryAndGoals = () => {
               <div className="overflow-y-auto h-full flex flex-col gap-2  scrollbar scrollbar-w-1   scrollbar-track-rounded-lg scrollbar-thumb-rounded-lg scrollbar-thumb-teal-80 scrollbar-track-gray-400">
                 {/* <LoanOption /> */}
 
-                {otherLoanOptions.map((option, i) => (
+                {goals.map((option, i) => (
                   <GoalItem
                     key={i}
                     title={option.title}
