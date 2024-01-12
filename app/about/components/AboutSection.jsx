@@ -60,7 +60,7 @@ const AboutSection = () => {
             </div>
           </div>
           <div className="bg-[#f2f2f2] h-[16rem] w-[fit-content] md:w-[24rem]  selection:self-start flex items-center justify-center mt-8 lg:mt-0">
-            <div className=" gap-12 flex flex-col justify-center px-16">
+            <div className=" gap-12 flex flex-col justify-center px-4 md:px-16">
               <h2 className=" text-2xl lg:text-4xl font-semibold text-[#505ca4]">
                 Find the best counsel and support
               </h2>

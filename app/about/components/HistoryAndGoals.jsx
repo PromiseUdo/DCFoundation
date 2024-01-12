@@ -37,8 +37,8 @@ const HistoryAndGoals = () => {
   return (
     <div>
       <Container>
-        <div className="w-full flex gap-12">
-          <div className="w-[50%] flex flex-col gap-2">
+        <div className="w-full flex flex-col md:flex-row gap-12">
+          <div className="w-full md:w-[50%] flex flex-col gap-2">
             <h3 className="text-3xl font-semibold mb-6 ">Our History</h3>
             <p className="leading-relaxed">
               Established in 2013, DS Foundation was born out of a deep-seated
@@ -70,7 +70,7 @@ const HistoryAndGoals = () => {
               </button>
             </div>
           </div>
-          <div className="w-[50%]  px-4">
+          <div className="w-full md:w-[50%]  md:px-4">
             <h3 className="text-3xl font-semibold mb-6 ">Our Goals</h3>
 
             <div className="w-full h-[30rem]  ">

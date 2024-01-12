@@ -16,7 +16,7 @@ const OurTeam = () => {
       {/* <Container> */}
       <div className="w-full flex items-center justify-center">
         <div className="w-[80%]  flex flex-col gap-4">
-          <div className="w-full flex  items-center justify-center gap-20">
+          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-20">
             <div className=" cursor-pointer group">
               <div className="shadow relative aspect-square h-72 w-72 rounded-lg overflow-hidden">
                 <Image

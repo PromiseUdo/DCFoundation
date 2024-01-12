@@ -11,10 +11,10 @@ const pages = [
     title: "About Us",
     url: "/about",
   },
-  // {
-  //   title: "Career",
-  //   url: "/about",
-  // },
+  {
+    title: "Services",
+    url: "/services",
+  },
   {
     title: "Blog",
     url: "/blog",
