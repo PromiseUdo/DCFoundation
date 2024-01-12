@@ -19,10 +19,10 @@ const ResourceNav = () => {
               Career Restart
             </button>
             <button className="rounded-lg hover:bg-[#565C5B] py-2 px-4 hover:text-[#f7f7f7] font-semibold">
-              Support
+              Trauma Counselling
             </button>
             <button className="rounded-lg hover:bg-[#565C5B] py-2 px-4 hover:text-[#f7f7f7] font-semibold">
-              Family
+              Domestic Violence Support
             </button>
           </div>
         </div>
