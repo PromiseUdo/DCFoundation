@@ -9,7 +9,7 @@ const BreadCrumb = () => {
         <div className="flex items-center gap-1">
           <span>Home</span>
           <MdChevronRight />
-          <span>Blog</span>
+          <span>Blog and News</span>
         </div>
       </Container>
     </div>

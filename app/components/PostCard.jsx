@@ -19,7 +19,7 @@ const PostCard = ({ image, title, snippet, url }) => {
         <p className="text-sm md:text-base">{snippet}</p>
         <Link className="flex items-center gap-2" href={url}>
           <span className="text-sm md:text-base font-light hover:text-[#505ca4] hover:underline">
-            Read Mores
+            Read More
           </span>{" "}
           <FaChevronRight color="#505ca4" />
         </Link>

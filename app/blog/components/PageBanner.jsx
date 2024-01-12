@@ -9,7 +9,7 @@ const PageBanner = () => {
           className="w-full
         "
         >
-          <h1 className="text-[#f7f7f7] text-4xl">Blog</h1>
+          <h1 className="text-[#f7f7f7] text-4xl">Blog and News</h1>
         </div>
       </Container>
     </section>
