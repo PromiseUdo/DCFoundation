@@ -25,7 +25,7 @@ const AboutSection = () => {
                 nurturing community, we enable women to overcome obstacles and
                 flourish in both their professional and personal journeys. Join
                 us in fostering empowerment, resilience, and transformation.
-                Together, we&apos;re reshaping futures.
+                Together, we&apos;re reshaping futures
               </p>
             </div>
 
