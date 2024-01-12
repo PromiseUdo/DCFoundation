@@ -51,7 +51,7 @@ const ResourceList = () => {
   return (
     <section className=" m-auto w-full py-12">
       <Container>
-        <div className="m-auto gap-8 w-full 2xl:w-[80%] flex flex-wrap">
+        <div className="m-auto gap-8 grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 w-full ">
           {resources.map((resource, idx) => (
             <ResourceCard
               key={idx}

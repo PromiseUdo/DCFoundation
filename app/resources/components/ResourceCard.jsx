@@ -3,13 +3,14 @@ import React from "react";
 
 const ResourceCard = ({ image, title, alt, type, url }) => {
   return (
-    <div className="rounded-lg border border-[#d7d7d7] shadow hover:shadow-lg w-96 h-[25rem] px-4 py-4 flex flex-col">
+    <div className="rounded-lg border border-[#d7d7d7] shadow hover:shadow-lg w-full h-[25rem] px-4 py-4 flex flex-col">
       <div
         className="rounded-lg w-full h-52"
         style={{
           background: `url('${image}')`,
           backgroundPostiton: "center",
           backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
         }}
       ></div>
       <div className="flex flex-col grow w-full pt-4 ">
