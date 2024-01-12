@@ -10,7 +10,7 @@ const CommunicationChannels = () => {
     <div className="w-full ">
       <Container>
         <div>
-          <div className="flex items-center gap-8 my-6">
+          <div className="flex items-center justify-center md:justify-start gap-2 my-6">
             <div>
               <MdOutlineAccessTimeFilled size={30} color="#505ca4" />
             </div>
@@ -56,7 +56,7 @@ const CommunicationChannels = () => {
                   <span className="font-semibold">Visit our Office</span>
                 </div>
 
-                <div className="flex  flex-col items-end gap-1">
+                <div className="flex  flex-col items-center  md:items-end gap-1">
                   <h4 className="font-semibold">HEAD OFFICE</h4>
                   <span className="font-light">Dadri, Uttar Pradesh</span>
                 </div>

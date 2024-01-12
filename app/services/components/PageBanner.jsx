@@ -9,10 +9,9 @@ const PageBanner = () => {
           className="w-full flex flex-col gap-2
         "
         >
-          <h1 className="text-[#f7f7f7] text-4xl">Get Involved</h1>
+          <h1 className="text-[#f7f7f7] text-4xl">Services</h1>
           <p className="text-[#f7f7f7] max-w-lg">
-            Become a partner, volunteer or work with us. Together we can make a
-            difference today
+            Learn more about the services that we provide
           </p>
         </div>
       </Container>

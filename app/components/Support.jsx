@@ -1,5 +1,6 @@
 import React from "react";
 import Container from "./Container";
+import Link from "next/link";
 
 const Support = () => {
   return (
@@ -31,9 +32,12 @@ const Support = () => {
             </p>
           </div>
           <div className="">
-            <button className="shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100">
-              Donate Now{" "}
-            </button>
+            <Link
+              href="/get-involved"
+              className="shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100"
+            >
+              Get Involved
+            </Link>
           </div>
         </div>
       </Container>
