@@ -24,7 +24,7 @@ export const faqs = [
     title:
       "How can I stay updated on DS Foundation's activities and initiatives?",
     answer:
-      "Stay connected with DS Foundation by subscribing to our newsletter, following us on social media, and regularly checking our website for updates. You can find links to our social media pages in the footer of our website.",
+      "Stay connected with DS Foundation by subscribing to our newsletter, following us on social media, and regularly checking our website for updates. You can find links to our social media pages in the footer of our website",
   },
   {
     title: "Can men also benefit from DS Foundation's programs?",
