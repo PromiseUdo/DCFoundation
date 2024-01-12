@@ -11,7 +11,7 @@ const ContactFormAndMap = () => {
     <div className="w-full my-32">
       <div className="w-full h-[50rem] md:h-[25rem] flex flex-col md:flex-row items-center">
         <div className="bg-[#202441] w-full md:w-[50%] h-full flex items-center justify-center">
-          <div className="z-20 w-full md:w-[80%] lg:w-[50%] rounded-lg h-[36rem] bg-[#f7f7f7] px-8 py-8 shadow-md ">
+          <div className="z-20 w-full md:w-[70%] lg:w-[50%] rounded-lg h-[36rem] bg-[#f7f7f7] px-8 py-8 shadow-md ">
             <h3 className="text-2xl font-semibold">Leave us a message</h3>
             <p className="text-sm leading-relaxed mt-2">
               Have any inquiries, kindly drop a message and we will respond
