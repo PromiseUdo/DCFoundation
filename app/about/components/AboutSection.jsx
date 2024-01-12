@@ -12,7 +12,7 @@ const AboutSection = () => {
           <div className="flex flex-col gap-8">
             <div>
               <span className="text-4xl font-semibold  leading-relaxed text-[#505ca4]">
-                Women Empowerment : <br /> Empower. Transform. Thrive.
+                Our Approach : <br /> Empower. Transform. Thrive.
               </span>
               <div className="w-20 mt-1 h-[2px] bg-[#FFB600]"></div>
             </div>
