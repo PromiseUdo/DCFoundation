@@ -4,7 +4,7 @@ import Link from "next/link";
 import { MdArrowRightAlt } from "react-icons/md";
 import Container from "../../components/Container";
 
-const AboutSection = () => {
+const AboutSection = ({ approach }) => {
   return (
     <section className="w-full py-12 ">
       <Container>
@@ -12,20 +12,13 @@ const AboutSection = () => {
           <div className="flex flex-col gap-8">
             <div>
               <span className="text-2xl md:text-4xl font-semibold  leading-relaxed text-[#505ca4]">
-                Our Approach : <br /> Empower. Transform. Thrive.
+                {approach.title} <br /> {approach?.subtitle}
               </span>
               <div className="w-20 mt-1 h-[2px] bg-[#FFB600]"></div>
             </div>
             <div>
               <p className="text-sm md:text-base max-w-lg leading-relaxed">
-                Empowering Women for Renewed Careers and Lives. We are a
-                dedicated NGO committed to helping women reignite their careers
-                after life-altering challenges like marriage, domestic violence,
-                and harassment. Through tailored guidance, mentoring, and a
-                nurturing community, we enable women to overcome obstacles and
-                flourish in both their professional and personal journeys. Join
-                us in fostering empowerment, resilience, and transformation.
-                Together, we&apos;re reshaping futures
+                {approach?.approachDescription}
               </p>
             </div>
 

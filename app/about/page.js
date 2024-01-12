@@ -2,7 +2,6 @@ import AboutSection from "./components/AboutSection";
 import BreadCrumb from "./components/BreadCrumb";
 import OurImpact from "./components/OurImpact";
 import PageBanner from "./components/PageBanner";
-import GetInvolved from "./components/GetInvolved";
 import OurTeam from "./components/OurTeam";
 import HistoryAndGoals from "./components/HistoryAndGoals";
 import { createClient } from "contentful";
@@ -12,25 +11,35 @@ async function getData() {
     space: process.env.CONTENTFUL_SPACE_ID,
     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
   });
-  const res = await client.getEntries({
+  const teamMembers = await client.getEntries({
     content_type: "teamMembers",
   });
-  return res;
+  const goals = await client.getEntries({
+    content_type: "ourGoals",
+  });
+  const history = await client.getEntries({
+    content_type: "outHistory",
+  });
+  const impact = await client.getEntries({
+    content_type: "impact",
+  });
+  const approach = await client.getEntries({
+    content_type: "ourApproach",
+  });
+  return [teamMembers, goals, history, impact, approach];
 }
 
 export default async function About() {
-  const data = await getData();
+  const [teamMembers, goals, history, impact, approach] = await getData();
 
-  console.log(data.items[0].fields.memberPhoto.file);
   return (
     <>
       <BreadCrumb />
       <PageBanner />
-      <AboutSection />
-      <OurImpact />
-      <HistoryAndGoals />
-      {/* <GetInvolved /> */}
-      <OurTeam teamMembers={data.items} />
+      <AboutSection approach={approach.items[0].fields} />
+      <OurImpact impact={impact.items[0].fields} />
+      <HistoryAndGoals history={history.items[0].fields} goals={goals.items} />
+      <OurTeam teamMembers={teamMembers.items} />
     </>
   );
 }
