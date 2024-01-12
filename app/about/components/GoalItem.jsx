@@ -16,7 +16,7 @@ const GoalItem = ({ title, description, url, image }) => {
       </div> */}
       <div className="flex flex-col gap-3">
         <h4 className="font-semibold text-lg">{title}</h4>
-        <p>{description}</p>
+        <p className="text-sm md:text-base leading-relaxed">{description}</p>
         {/* <div className="mt-1 w-full">
           <Link
             href={url}

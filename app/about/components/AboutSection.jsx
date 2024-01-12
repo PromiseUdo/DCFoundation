@@ -11,13 +11,13 @@ const AboutSection = () => {
         <div className="w-full flex flex-col md:gap-12 md:flex-row items-center justify-between h-full">
           <div className="flex flex-col gap-8">
             <div>
-              <span className="text-4xl font-semibold  leading-relaxed text-[#505ca4]">
+              <span className="text-2xl md:text-4xl font-semibold  leading-relaxed text-[#505ca4]">
                 Our Approach : <br /> Empower. Transform. Thrive.
               </span>
               <div className="w-20 mt-1 h-[2px] bg-[#FFB600]"></div>
             </div>
             <div>
-              <p className="max-w-lg leading-loose">
+              <p className="text-sm md:text-base max-w-lg leading-relaxed">
                 Empowering Women for Renewed Careers and Lives. We are a
                 dedicated NGO committed to helping women reignite their careers
                 after life-altering challenges like marriage, domestic violence,

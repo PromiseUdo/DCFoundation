@@ -40,7 +40,7 @@ const HistoryAndGoals = () => {
         <div className="w-full flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[50%] flex flex-col gap-2">
             <h3 className="text-3xl font-semibold mb-6 ">Our History</h3>
-            <p className="leading-relaxed">
+            <p className="text-sm md:text-base leading-relaxed">
               Established in 2013, DS Foundation was born out of a deep-seated
               commitment to stand beside women facing adversity. Our founders
               envisioned a sanctuary where women could find refuge, regain
@@ -48,18 +48,21 @@ const HistoryAndGoals = () => {
               challenges they faced.
             </p>
 
-            <p>
+            <p className="text-sm md:text-base leading-relaxed">
               Our initial efforts were dedicated to providing immediate
               assistance to those experiencing domestic violence. DS Foundation
               became a haven, offering resources, counseling, and a supportive
               community for survivors to rebuild their lives.
             </p>
-            <p className="leading-relaxed mt-4">
+            <p className="text-sm md:text-base leading-relaxed mt-4">
               How you can support the foundation
             </p>
             <ul className=" flex flex-col gap-2">
               {requirements.map((item, i) => (
-                <li key={i} className="leading-relaxed flex items-center gap-1">
+                <li
+                  key={i}
+                  className="text-sm md:text-base leading-relaxed flex items-center gap-1"
+                >
                   <MdChevronRight /> {item}
                 </li>
               ))}
