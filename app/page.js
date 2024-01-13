@@ -8,27 +8,29 @@ import Testimonials from "./components/Testimonials";
 import Support from "./components/Support";
 import LatestPosts from "./components/LatestPosts";
 import Newsletter from "./components/Newsletter";
-// async function getData() {
-//   const client = createClient({
-//     space: process.env.CONTENTFUL_SPACE_ID,
-//     accessToken: process.env.CONTENTFUL_ACCESS_KEY,
-//   });
-//   const res = await client.getEntries({
-//     content_type: "heroSection",
-//   });
-//   return res;
-// }
+
+async function getData() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+  const testimonials = await client.getEntries({
+    content_type: "successStory",
+  });
+
+  return [testimonials];
+}
 
 export default async function Home() {
-  // const data = await getData();
+  const [testimonials] = await getData();
 
-  // console.log(data.items, "dd");
+  console.log(testimonials.items[0].fields?.testifierImage, "sfdfd");
   return (
     <>
       <HeroSection />
       <FocusAreas />
       <MissionAndVision />
-      <Testimonials />
+      <Testimonials testimonials={testimonials?.items} />
       <Support />
       <LatestPosts />
       <Newsletter />

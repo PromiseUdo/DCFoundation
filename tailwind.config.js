@@ -14,5 +14,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-text-fill"), require("@tailwindcss/forms")],
+  plugins: [
+    require("tailwindcss-text-fill"),
+    require("@tailwindcss/forms"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

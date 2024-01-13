@@ -7,29 +7,6 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 
-const testimonialData = [
-  {
-    imgSource: "/testifier_image.jpg",
-    country: "Pune, India",
-    comment: "It got an amazing support from DS Foundation",
-    name: "Divya Amara",
-    profession: "Teacher",
-  },
-  {
-    imgSource: "/testifier_image.jpg",
-    country: "Pune, India",
-    comment: "It got an amazing support from DS Foundation",
-    name: "Divya Amara",
-    profession: "Teacher",
-  },
-  {
-    imgSource: "/testifier_image.jpg",
-    country: "Pune, India",
-    comment: "It got an amazing support from DS Foundation",
-    name: "Divya Amara",
-    profession: "Teacher",
-  },
-];
 const TestimonialCard = ({ imgSource, country, comment, name, profession }) => {
   return (
     <div className="flex flex-col-reverse items-center md:items-start md:flex-row justify-center py-0 px-[3rem] gap-[2rem] mb-[4rem] pt-[2rem]">
@@ -42,9 +19,7 @@ const TestimonialCard = ({ imgSource, country, comment, name, profession }) => {
           <span className="relative z-20 text-[2rem]">{country}</span>
         </div>
         {/* comment */}
-        <p className="text-[1.3rem] md:text-[1.8rem] leading-[1.8] italic ">
-          {comment}
-        </p>
+        <p className="text-sm md:text-lg leading-[1.8] italic ">{comment}</p>
         {/* name */}
         <div className="flex flex-col gap-[0.5rem] justify-start items-start">
           <div className="text-[1.5rem] ">{name}</div>
@@ -78,24 +53,26 @@ const TestimonialCard = ({ imgSource, country, comment, name, profession }) => {
   );
 };
 
-const Testimonials = () => {
+const Testimonials = ({ testimonials }) => {
   return (
     <SectionContainer
-      title="Testimonials"
+      title="Success Stories"
       subtitle="What People Say About Us"
       description="We believe we can contribute a lot to the development of women lives by focusing on these areas"
       hasBg={true}
       color={"#c1c1d1"}
     >
       <Carousel emulateTouch showThumbs={false} showStatus={false}>
-        {testimonialData.map((testimonial, idx) => (
+        {testimonials.map((testimonial, idx) => (
           <TestimonialCard
             key={idx}
-            imgSource={testimonial.imgSource}
-            country={testimonial.country}
-            profession={testimonial.profession}
-            comment={testimonial.comment}
-            name={testimonial.name}
+            imgSource={
+              "https:" + testimonial?.fields?.testifierImage?.fields?.file?.url
+            }
+            country={testimonial?.fields?.location}
+            profession={testimonial?.fields?.occupation}
+            comment={testimonial?.fields?.testimonyText}
+            name={testimonial?.fields?.testifier}
           />
         ))}
       </Carousel>
