@@ -6,7 +6,9 @@ import { MdOutlineSubject } from "react-icons/md";
 import { FaRegMessage } from "react-icons/fa6";
 import { FiSend } from "react-icons/fi";
 
-const ContactFormAndMap = () => {
+const ContactFormAndMap = ({ contactInfo }) => {
+  const embedUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47150.72755345543!2d${contactInfo?.officeAddress?.lon}!3d${contactInfo?.officeAddress?.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb4e4770e023%3A0x3d9b9e01106cf495!2sDadri%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sng!4v1705046984181!5m2!1sen!2sng`;
+
   return (
     <div className="w-full my-32">
       <div className="w-full h-[50rem] md:h-[25rem] flex flex-col md:flex-row items-center">
@@ -93,7 +95,7 @@ const ContactFormAndMap = () => {
         </div>
         <div className="w-full md:w-[50%]  h-full ">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47150.72755345543!2d77.51612104731502!3d28.55478110389664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ceb4e4770e023%3A0x3d9b9e01106cf495!2sDadri%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sng!4v1705046984181!5m2!1sen!2sng"
+            src={embedUrl}
             width="100%"
             height="100%"
             style={{ border: "0" }}

@@ -5,7 +5,7 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdOutlineAccessTimeFilled } from "react-icons/md";
 
-const CommunicationChannels = () => {
+const CommunicationChannels = ({ contactInfo }) => {
   return (
     <div className="w-full ">
       <Container>
@@ -32,7 +32,7 @@ const CommunicationChannels = () => {
                 </div>
 
                 <div className="flex  flex-col gap-1 items-end">
-                  <span className="font-light">94722 24524</span>
+                  <span className="font-light">{contactInfo?.phoneNumber}</span>
                 </div>
               </div>
 
@@ -45,7 +45,9 @@ const CommunicationChannels = () => {
                 </div>
 
                 <div className="flex flex-col gap-1  items-end">
-                  <span className="font-light">dsfoundationw@gmail.com</span>
+                  <span className="font-light">
+                    {contactInfo?.emailAddress}
+                  </span>
                 </div>
               </div>
 
@@ -58,7 +60,9 @@ const CommunicationChannels = () => {
 
                 <div className="flex  flex-col items-center  md:items-end gap-1">
                   <h4 className="font-semibold">HEAD OFFICE</h4>
-                  <span className="font-light">Dadri, Uttar Pradesh</span>
+                  <span className="font-light">
+                    {contactInfo?.officeAddressText}
+                  </span>
                 </div>
               </div>
             </div>

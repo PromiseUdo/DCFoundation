@@ -1,13 +1,14 @@
 import React from "react";
 import Container from "../../components/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const ForOrganizations = () => {
   return (
     <div className="w-full h-[fit-content] py-12 bg-[#fafafa]">
       <Container>
         <h3 className="text-3xl font-semibold mb-6 ">For Organizations</h3>
-        <div className="flex items-center justify-between">
+        <div className="mb-8 flex items-center justify-between">
           <p className="leading-relaxed max-w-3xl">
             Are you a business owner committed to making a positive impact in
             the lives of women and their families? DS Foundation welcomes
@@ -29,9 +30,12 @@ const ForOrganizations = () => {
           />
         </div>
 
-        <button className="mt-8 shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100">
+        <Link
+          href="/contact-us"
+          className=" shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100"
+        >
           Get in touch
-        </button>
+        </Link>
       </Container>
     </div>
   );

@@ -1,11 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { faqs } from "../data";
 import AccordionItem from "./AccordionItem";
 import Container from "../../components/Container";
 
-const FAQ = () => {
+const FAQ = ({ faqs }) => {
   const [open, setOpen] = useState(false);
 
   const toggle = (index) => {
@@ -24,8 +23,8 @@ const FAQ = () => {
               <AccordionItem
                 key={i}
                 open={i === open}
-                title={faq.title}
-                answer={faq.answer}
+                title={faq?.fields?.question}
+                answer={faq?.fields?.answer}
                 toggle={() => toggle(i)}
               />
             ))}

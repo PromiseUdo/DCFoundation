@@ -10,8 +10,24 @@ import { FaCalendarDay } from "react-icons/fa";
 import { MdAccessTimeFilled } from "react-icons/md";
 import Container from "./Container";
 import Link from "next/link";
+import { createClient } from "contentful";
+async function getData() {
+  const client = createClient({
+    space: process.env.CONTENTFUL_SPACE_ID,
+    accessToken: process.env.CONTENTFUL_ACCESS_KEY,
+  });
+  const contactInfo = await client.getEntries({
+    content_type: "contactInformation",
+  });
 
-const Footer = () => {
+  return [contactInfo];
+}
+const Footer = async () => {
+  const [contactInfo] = await getData();
+
+  const { phoneNumber, emailAddress, linkedinUrl, officeAddressText } =
+    contactInfo.items[0].fields;
+
   return (
     <section className="w-full text-[#f7f7f7] bg-[#202441] py-20">
       <Container>
@@ -26,18 +42,19 @@ const Footer = () => {
               </h3>
               <div className="flex items-center gap-1">
                 <FaPhone />
-                <span className="">94722 24524</span>
+                <span className="">{phoneNumber}</span>
               </div>
               <div className="flex items-center gap-1">
                 <MdEmail />
-                <span className="">dsfoundationw@gmail.com</span>
+                <span className="">{emailAddress}</span>
               </div>
               <div className="flex items-center gap-2 mt-4">
-                <FaInstagramSquare className="cursor-pointer" size={30} />
-                <FaFacebookSquare className="cursor-pointer" size={30} />
+                {/* <FaInstagramSquare className="cursor-pointer" size={30} /> */}
+                {/* <FaFacebookSquare className="cursor-pointer" size={30} /> */}
                 <a
-                  href="https://www.linkedin.com/company/ds-foundations/"
+                  href={linkedinUrl}
                   target="_blank"
+                  aria-labelledby="linkedin url"
                 >
                   <FaLinkedin className="cursor-pointer" size={30} />
                 </a>
@@ -79,7 +96,7 @@ const Footer = () => {
             <div className="w-20  h-[2px] bg-[#FFB600]"></div>
 
             <div className="flex flex-col gap-1">
-              <h3 className="font-medium text-lg">Dadri, Uttar Pradesh</h3>
+              <h3 className="font-medium text-lg">{officeAddressText}</h3>
               {/* <p className="">#23 Masharatta Road</p> */}
             </div>
             <div className="flex flex-col gap-1">
