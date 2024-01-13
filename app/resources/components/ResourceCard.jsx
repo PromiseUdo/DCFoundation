@@ -22,6 +22,7 @@ const ResourceCard = ({ image, title, alt, type, url }) => {
           <a
             href={url}
             download
+            target="_blank"
             className="bg-[#f7f7f7] hover:bg-[#d7d7d7] transition-all duration-100 rounded-lg border-2 border-[#202441] py-2 px-4"
           >
             Download

@@ -14,7 +14,7 @@ const CareerRestart = ({ careerRestart }) => {
       <div className="w-full flex flex-col md:flex-row gap-12">
         <div className="w-full md:w-[50%] flex flex-col gap-2">
           <h3 className="text-3xl font-semibold mb-6 ">
-            {careerRestart.aboutTitle}
+            {careerRestart?.aboutTitle}
           </h3>
           <p
             className="text-sm md:text-base leading-relaxed"
@@ -27,7 +27,7 @@ const CareerRestart = ({ careerRestart }) => {
             {careerRestart?.programFeaturesTitle}
           </p>
           <ul className=" flex flex-col gap-2">
-            {careerRestart?.programFeaturesList.map((item, i) => (
+            {careerRestart?.programFeaturesList?.map((item, i) => (
               <li
                 key={i}
                 className="text-sm md:text-base leading-relaxed flex items-center gap-1"

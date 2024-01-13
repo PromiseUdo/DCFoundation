@@ -14,20 +14,30 @@ async function getData() {
   const careerRestart = await client.getEntries({
     content_type: "careerRestartService",
   });
+  const traumaCounselling = await client.getEntries({
+    content_type: "traumaCounsellingService",
+  });
+  const domesticViolenceSupport = await client.getEntries({
+    content_type: "domesticViolenceSupport",
+  });
 
-  return [careerRestart];
+  return [careerRestart, traumaCounselling, domesticViolenceSupport];
 }
 
 const page = async () => {
-  const [careerRestart] = await getData();
-  console.log(careerRestart.items[0].fields.benefitsList, "dfdfdf");
+  const [careerRestart, traumaCounselling, domesticViolenceSupport] =
+    await getData();
   return (
     <>
       <BreadCrumb />
       <PageBanner />
-      <CareerRestart careerRestart={careerRestart.items[0].fields} />
-      <TraumaConselling />
-      <DomesticViolenceSupport />
+      <CareerRestart careerRestart={careerRestart?.items[0]?.fields} />
+      <TraumaConselling
+        traumaCounselling={traumaCounselling?.items[0]?.fields}
+      />
+      <DomesticViolenceSupport
+        domesticViolenceSupport={domesticViolenceSupport?.items[0]?.fields}
+      />
     </>
   );
 };

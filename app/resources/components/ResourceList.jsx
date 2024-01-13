@@ -2,64 +2,23 @@ import React from "react";
 import Container from "../../components/Container";
 import ResourceCard from "./ResourceCard";
 
-const resources = [
-  {
-    image: "/resource1.png",
-    alt: "resource1",
-    type: "eBook",
-    title: "A New Career Path in 2024",
-    url: "/",
-  },
-  {
-    image: "/resource2.png",
-    alt: "resource1",
-    type: "eBook",
-    title: "Family Life and Support",
-    url: "/",
-  },
-  {
-    image: "/resource3.png",
-    alt: "resource1",
-    type: "eBook",
-    title: "How to Get Help",
-    url: "/",
-  },
-  {
-    image: "/resource4.png",
-    alt: "resource1",
-    type: "eBook",
-    title: "Starting a new Family",
-    url: "/",
-  },
-  {
-    image: "/resource5.png",
-    alt: "resource1",
-    type: "eBook",
-    title: "Care Giving in Modern Life",
-    url: "/",
-  },
-  {
-    image: "/resource6.png",
-    alt: "resource1",
-    type: "eBook",
-    title: "Healthy Diets",
-    url: "/",
-  },
-];
-
-const ResourceList = () => {
+const ResourceList = ({ resources }) => {
   return (
     <section className=" m-auto w-full py-12">
       <Container>
         <div className="m-auto gap-8 grid grid-cols-1 md:grid-cols-3 2xl:grid-cols-4 w-full ">
-          {resources.map((resource, idx) => (
+          {resources?.map((resource, idx) => (
             <ResourceCard
               key={idx}
-              image={resource.image}
-              alt={resource.alt}
-              type={resource.type}
-              title={resource.title}
-              url={resource.url}
+              image={
+                "https:" + resource?.fields?.resourceImage?.fields?.file?.url
+              }
+              alt={resource?.fields?.resourceMateral?.fields?.file?.fileName}
+              type={resource?.fields?.category}
+              title={resource?.fields?.title}
+              url={
+                "https:" + resource?.fields?.resourceMateral?.fields?.file?.url
+              }
             />
           ))}
         </div>

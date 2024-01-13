@@ -16,17 +16,17 @@ const HistoryAndGoals = ({ history, goals }) => {
       <Container>
         <div className="w-full flex flex-col md:flex-row gap-12">
           <div className="w-full md:w-[50%] flex flex-col gap-2">
-            <h3 className="text-3xl font-semibold mb-6 ">{history.title}</h3>
+            <h3 className="text-3xl font-semibold mb-6 ">{history?.title}</h3>
             <p
               className="text-sm md:text-base leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: history.description }}
+              dangerouslySetInnerHTML={{ __html: history?.description }}
             />
 
             <p className="text-sm md:text-base leading-relaxed mt-4">
-              {history.supportTitle}
+              {history?.supportTitle}
             </p>
             <ul className=" flex flex-col gap-2">
-              {history.howToSupport.map((item, i) => (
+              {history?.howToSupport.map((item, i) => (
                 <li
                   key={i}
                   className="text-sm md:text-base leading-relaxed flex items-center gap-1"
@@ -37,7 +37,7 @@ const HistoryAndGoals = ({ history, goals }) => {
             </ul>
             <div className="w-full my-4">
               <button className="shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100">
-                {history.ctaCaption}
+                {history?.ctaCaption}
               </button>
             </div>
           </div>
@@ -51,8 +51,8 @@ const HistoryAndGoals = ({ history, goals }) => {
                 {goals.map((option, i) => (
                   <GoalItem
                     key={i}
-                    title={option.fields.title}
-                    description={option.fields.description}
+                    title={option?.fields?.title}
+                    description={option?.fields?.description}
                   />
                 ))}
               </div>

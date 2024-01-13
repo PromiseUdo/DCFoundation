@@ -27,7 +27,7 @@ const ContactFormAndMap = () => {
                   <FaRegUser color="#979797" />
                   <input
                     required
-                    className="bg-[#f7f7f7] text-sm border-none outline-none h-8 w-full"
+                    className="bg-[#f7f7f7] focus:ring-0 text-sm border-none outline-none h-8 w-full"
                     type="text"
                     placeholder="Your Name"
                   />
@@ -42,9 +42,9 @@ const ContactFormAndMap = () => {
                   <MdOutlineEmail color="#979797" />
                   <input
                     required
-                    className="bg-[#f7f7f7] text-sm border-none outline-none h-8 w-full"
-                    type="text"
-                    placeholder="Your Name"
+                    className="bg-[#f7f7f7] focus:ring-0 text-sm border-none outline-none h-8 w-full focus:outline-none"
+                    type="email"
+                    placeholder="Your Email"
                   />
                 </div>
               </div>
@@ -56,9 +56,9 @@ const ContactFormAndMap = () => {
                   <MdOutlineSubject color="#979797" />
                   <input
                     required
-                    className="bg-[#f7f7f7] text-sm border-none outline-none h-8 w-full"
+                    className="bg-[#f7f7f7] focus:ring-0 focus:outline-none text-sm border-none outline-none h-8 w-full"
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your Subject"
                   />
                 </div>
               </div>
@@ -74,9 +74,9 @@ const ContactFormAndMap = () => {
                       resize: "none",
                     }}
                     required
-                    className="text-sm border-none outline-none h-[4rem] bg-[#f7f7f7] w-full"
+                    className="text-sm focus:ring-0 active:border-none  active:outline-none border-none outline-none h-[4rem] bg-[#f7f7f7] w-full"
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="Your Message"
                   />
                 </div>
               </div>

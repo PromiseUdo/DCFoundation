@@ -11,33 +11,33 @@ const OurImpact = ({ impact }) => {
             <div className="w-full flex flex-col md:flex-row items-center justify-between h-full">
               <div className="py-4">
                 <h2 className="max-w-lg text-2xl lg:text-4xl text-[#f7f7f7]">
-                  {impact.title}
+                  {impact?.title}
                 </h2>
               </div>
               <div className="text-[#f7f7f7] flex flex-col md:flex-row items-center gap-8">
                 <div className="w-full flex flex-col gap-3">
                   <p className="text-3xl lg:text-5xl font-semibold">
-                    {formatNumber(impact.memberCount)}
+                    {formatNumber(impact?.memberCount)}
                   </p>
-                  <p className="font-light">{impact.membersTitle}</p>
+                  <p className="font-light">{impact?.membersTitle}</p>
                 </div>
                 <div className="hidden lg:block">
                   <Image src="/line.png" height={64} width={64} alt="divider" />
                 </div>
                 <div className="w-full flex flex-col gap-3 ">
                   <p className="text-3xl lg:text-5xl font-semibold">
-                    {formatNumber(impact.volunteerCount)}
+                    {formatNumber(impact?.volunteerCount)}
                   </p>
-                  <p className="font-light">{impact.volunteerTitle}</p>
+                  <p className="font-light">{impact?.volunteerTitle}</p>
                 </div>
                 <div className="hidden lg:block">
                   <Image src="/line.png" height={64} width={64} alt="divider" />
                 </div>
                 <div className="w-full flex flex-col gap-3 ">
                   <p className="text-3xl lg:text-5xl font-semibold">{`₹${formatNumber(
-                    impact.amountRaised
+                    impact?.amountRaised
                   )}`}</p>
-                  <p className="font-light">{impact.fundsRaisedTitle}</p>
+                  <p className="font-light">{impact?.fundsRaisedTitle}</p>
                 </div>
               </div>
             </div>

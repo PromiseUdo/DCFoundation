@@ -19,7 +19,9 @@ const OurTeam = ({ teamMembers }) => {
               <div key={idx} className=" cursor-pointer group">
                 <div className="shadow relative aspect-square h-72 w-72 rounded-lg overflow-hidden">
                   <Image
-                    src={"https:" + team.fields.memberPhoto.fields.file.url}
+                    src={
+                      "https:" + team?.fields?.memberPhoto?.fields?.file?.url
+                    }
                     alt="chairman"
                     fill
                     className="object-cover"
@@ -33,7 +35,7 @@ const OurTeam = ({ teamMembers }) => {
                   >
                     <a
                       target="_blank"
-                      href={team.fields.linkedinUrl}
+                      href={team?.fields?.linkedinUrl}
                       aria-labelledby="Visit LinkedIn page"
                     >
                       <FaLinkedin size={25} color="#f7f7f7" />
@@ -42,10 +44,10 @@ const OurTeam = ({ teamMembers }) => {
                 </div>
                 <div className="w-full mt-4 justify-center flex-col flex">
                   <h3 className=" text-center text-sm font-semibold">
-                    {team.fields.memberName}
+                    {team?.fields?.memberName}
                   </h3>
                   <p className="text-center text-sm">
-                    {team.fields.memberTitle}
+                    {team?.fields?.memberTitle}
                   </p>
                 </div>
               </div>
