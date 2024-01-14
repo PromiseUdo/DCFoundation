@@ -5,31 +5,7 @@ import { TbExternalLink } from "react-icons/tb";
 import Link from "next/link";
 import SectionContainer from "./SectionContainer";
 
-const posts = [
-  {
-    title: "FINANCIAL TIPS: make your worries go away",
-    image: "/post1.jpg",
-    snippet:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quo fugiat enim eum ad ab commodi?...",
-    url: "/",
-  },
-  {
-    title: "maybe it's time to get a new car",
-    image: "/post2.jpg",
-    snippet:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quo fugiat enim eum ad ab commodi?...",
-    url: "/",
-  },
-  {
-    title: "how we can help you get that home",
-    image: "/post3.jpg",
-    snippet:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit.  Explicabo quo fugiat enim eum ad ab commodi?...",
-    url: "/",
-  },
-];
-
-const LatestPosts = () => {
+const LatestPosts = ({ blogPosts }) => {
   return (
     <SectionContainer
       title="Blog Posts"
@@ -40,13 +16,13 @@ const LatestPosts = () => {
     >
       <div className="w-full">
         <div className="w-full  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-8">
-          {posts.map((post, idx) => (
+          {blogPosts.map((post, idx) => (
             <PostCard
               key={idx}
-              title={post.title}
-              image={post.image}
-              url={post.url}
-              snippet={post.snippet}
+              title={post?.fields?.title}
+              image={post?.fields?.featuredImage?.fields?.file?.url}
+              slug={post?.fields?.slug}
+              snippet={post?.fields?.snippet}
             />
           ))}
         </div>

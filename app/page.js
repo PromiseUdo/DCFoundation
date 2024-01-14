@@ -18,11 +18,16 @@ async function getData() {
     content_type: "successStory",
   });
 
-  return [testimonials];
+  const blogPosts = await client.getEntries({
+    content_type: "blogPosts",
+    limit: 3,
+  });
+
+  return [testimonials, blogPosts];
 }
 
 export default async function Home() {
-  const [testimonials] = await getData();
+  const [testimonials, blogPosts] = await getData();
 
   return (
     <>
@@ -31,7 +36,7 @@ export default async function Home() {
       <MissionAndVision />
       <Testimonials testimonials={testimonials?.items} />
       <Support />
-      <LatestPosts />
+      <LatestPosts blogPosts={blogPosts?.items} />
       <Newsletter />
     </>
   );
