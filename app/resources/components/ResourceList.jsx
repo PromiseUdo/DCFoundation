@@ -10,8 +10,6 @@ const ResourceList = ({ resources }) => {
   const { selectedNavItem } = useNavItem();
   const [filteredResources, setFilteredResources] = useState([]);
 
-  console.log(selectedNavItem);
-
   useEffect(() => {
     if (selectedNavItem && selectedNavItem !== "All") {
       const filtered = resources.filter(

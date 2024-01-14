@@ -19,7 +19,6 @@ async function getData() {
 
 const page = async () => {
   const [resources] = await getData();
-  console.log(resources?.items[0]?.fields?.resourceImage?.fields, "dfdfdfdf");
   return (
     <>
       <BreadCrumb />

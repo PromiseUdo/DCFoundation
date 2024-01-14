@@ -7,7 +7,6 @@ import { clsx } from "clsx";
 
 const ResourceNav = () => {
   const { selectedNavItem, updateNavItem } = useNavItem();
-  console.log(selectedNavItem);
   return (
     <div className="w-full">
       <Container>

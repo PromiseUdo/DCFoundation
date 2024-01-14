@@ -24,7 +24,6 @@ async function getData() {
 export default async function Home() {
   const [testimonials] = await getData();
 
-  console.log(testimonials.items[0].fields?.testifierImage, "sfdfd");
   return (
     <>
       <HeroSection />

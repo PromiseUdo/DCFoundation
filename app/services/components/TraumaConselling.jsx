@@ -48,7 +48,11 @@ const TraumaConselling = ({ traumaCounselling }) => {
           <div className="w-full h-[30rem]  ">
             <div className="overflow-y-auto h-full flex flex-col gap-2  scrollbar scrollbar-w-1   scrollbar-track-rounded-lg scrollbar-thumb-rounded-lg scrollbar-thumb-teal-80 scrollbar-track-gray-400">
               {traumaCounselling?.benefitsList?.map((option, i) => (
-                <Item key={i} title={option.title} description={option.desc} />
+                <Item
+                  key={i}
+                  title={option?.title}
+                  description={option?.desc}
+                />
               ))}
             </div>
           </div>

@@ -5,6 +5,7 @@ import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
 import { setTimeout } from "timers";
 import { clsx } from "clsx";
+import Link from "next/link";
 const slides = [
   {
     url: "/slide1.jpg",
@@ -67,12 +68,18 @@ const Carousel = () => {
           </p>
 
           <div className="flex flex-col md:flex-row mt-6 w-full justify-center  items-center gap-4">
-            <button className="shadow-md bg-[#f7f7f7] px-4 py-2 text-[#505ca4] rounded-md text-base md:text-lg hover:bg-[#fff] transition-all duration-100 ">
-              Our Causes
-            </button>
-            <button className="shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100">
+            <Link
+              href="/services"
+              className="shadow-md bg-[#f7f7f7] px-4 py-2 text-[#505ca4] rounded-md text-base md:text-lg hover:bg-[#fff] transition-all duration-100 "
+            >
+              Our Services
+            </Link>
+            <Link
+              href="/get-involved"
+              className="shadow-md bg-[#505ca4] text-[#f7f7f7] px-4 py-2 rounded-md text-base md:text-lg hover:bg-[#282e52] transition-all duration-100"
+            >
               Get Involved
-            </button>
+            </Link>
           </div>
         </div>
         {/* left arrow */}
